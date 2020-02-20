@@ -10,20 +10,21 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
   <div class="header">
     <img src="images/logo.svg" alt="">
     <div class="score">
-      <h5>SCORE</h5>
+      <h6>SCORE</h6>
       <h1 class="score-number">10</h1>
     </div>
   </div>
-  <!-- <div class="game-container">
-    <div class="computer-side">
 
-    </div>
-  </div> -->
-
-
+  <div class="rules-image-container">
+    <img class="rules-image" src="images/image-rules.svg" alt="">
+  </div>
+  
   <div class="hands-container">
     <div class="triangle">
       <img src="images/bg-triangle.svg" alt="">
@@ -42,41 +43,34 @@
     </div>
   </div>
 
+  <div class="rules-container">
+    <button class="rules-button" type="button" name="button">RULES</button>
+  </div>
+
   <div class="info-text">
     <div class="player-info">
       <h4>YOU PICKED</h4>
     </div>
-   <div class="computer-info">
-     <h4>THE HOUSE PICKED</h4>
-  </div>
+    <div class="computer-info">
+      <h4>THE HOUSE PICKED</h4>
+    </div>
   </div>
 
   <div class="game-section">
 
-
     <div class="person-side flex-item">
-      <img src="images/icon-rock.svg" alt="">
+      <img class="player-image" src="images/icon-rock.svg" alt="">
     </div>
+
+    <div class="text">
+      <h1 class="result"></h1>
+      <button class="play-again-button" type="button" name="button">PLAY AGAIN</button>
+    </div>
+
     <div class="computer-side flex-item">
-      <img src="images/icon-rock.svg" alt="">
+      <img class="computer-image" src="images/icon-rock.svg" alt="">
     </div>
   </div>
-
-
-  <!-- <h1>YOU WIN</h1>
-  <h1>YOU LOSE</h1>
-  <button class="play-again-button" type="button" name="button">PLAY AGAIN</button> -->
-
-  <div class="rules-container">
-    <button class="rules-button" type="button" name="button">RULES</button>
-    <img class="rules-image" src="images/image-rules.svg" alt="">
-  </div>
-
-</head>
-
-<body>
-
-
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -86,5 +80,4 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="index.js"></script>
 </body>
-
 </html>
