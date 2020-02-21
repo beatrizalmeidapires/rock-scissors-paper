@@ -209,13 +209,6 @@ h4 {
   align-self: end;
 }
 
-.rounded-shape{
-  width: 150px;
-  background-color: black;
-  justify-self: start;
-  align-self: end;
-}
-
 
 .info-text{
   display: grid;
@@ -257,4 +250,53 @@ h4 {
 .attribution a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .person-side {
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgb(177, 27, 27);
+
+  }
+
+  .computer-side {
+    border-radius: 80px;
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgb(177, 27, 27);
+  }
+
+  .game-section {
+    grid-auto-rows: 120px;
+  }
+
+  .play-again-button {
+    width: 100;
+    color: rgb(20, 30, 51);
+    border-radius: 5px;
+    margin: 30px;
+  }
+
+  .computer-info {
+    justify-self: start;
+    margin-left: 20px;
+  }
+  .player-info {
+    justify-self: end;
+    margin-right: 40px;
+  }
+
+  .text{
+    padding-top: 20px;
+  }
+
+  .hand > img {
+    margin-top: 20px;
+  }
+
+  .player-image, .computer-image {
+    margin-top: 20px;
+  }
 }

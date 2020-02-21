@@ -1,6 +1,27 @@
+// const mongoose = require("mongoose");
+//
+// mongoose.connect("mongodb://localhost:27017/rockscissorspaperDB", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+//
+// //The schema/structure of our collection/table.
+// const gameSchema = {
+//   points: Number
+// }
+//
+// //Creating our collection/table - items.
+// const Game = mongoose.model("game", gameSchema);
+//
+// //Creating new documents/records in our database.
+// const game1 = new Game({
+//   points: 0,
+// });
+// // game1.save();
+//
+
 let randomNumber = (Math.floor(Math.random() * 3) + 1);
 let score = 0;
-
 
 //displays the rules.
 $(".rules-button").click(function() {
