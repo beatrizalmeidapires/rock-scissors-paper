@@ -1,6 +1,6 @@
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background-image: linear-gradient(to top right, rgb(45, 62, 97), rgb(33, 46, 73));
+  background-color: rgb(33, 46, 73);
   text-align: center;
   color: white;
   letter-spacing: 2px;
@@ -49,13 +49,15 @@ h4 {
 /*----------Rules Section----------*/
 
 .rules-container {
-  text-align: right;
-  margin: 40px 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .rules-image-container {
   position: absolute;
   left: 33%;
+  z-index: 1;
 }
 
 .rules-image {
@@ -69,15 +71,24 @@ h4 {
 
 /*----------Buttons ----------*/
 
-.rules-button {
-  width: 85px;
+.rules-button, .reset-button {
+  margin: 5px;
+  width: 150px;
   background-color: rgb(33, 46, 73);
   border: 1px solid white;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
+}
+
+.rules-button:hover{
+  background-color: rgb(19, 26, 41);
+}
+
+.reset-button:hover{
+  background-color: rgb(19, 26, 41);
 }
 
 .play-again-button {
@@ -87,9 +98,13 @@ h4 {
   color: rgb(20, 30, 51);
   border-radius: 5px;
   font-size: 0.8rem;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.play-again-button:hover{
+  color: rgb(177, 27, 27);
 }
 
 .game-container {
@@ -143,7 +158,7 @@ h4 {
   grid-template-rows: 180px 120px;
   justify-content: center;
   margin-top: 60px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .rock {
@@ -194,17 +209,25 @@ h4 {
   align-self: end;
 }
 
+.rounded-shape{
+  width: 150px;
+  background-color: black;
+  justify-self: start;
+  align-self: end;
+}
+
+
 .info-text{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 50px;
   grid-gap: 6em;
-  margin: 40px 0 40px 0;
+  margin: 30px 0 20px 0;
 }
 
 .player-info {
   justify-self: end;
-  margin-right: 130px;
+  margin-right: 120px;
 }
 
 .player-image, .computer-image {
@@ -214,7 +237,7 @@ h4 {
 
 .computer-info {
   justify-self: start;
-  margin-left: 100px;
+  margin-left: 88px;
 }
 
 .text {
@@ -224,8 +247,10 @@ h4 {
 
 /*------- Footer -------*/
 .attribution {
-  margin-top: 60px;
+  display: inline;
+  margin-top: 30px;
   font-size: 11px;
+  position: sticky;
 }
 
 
